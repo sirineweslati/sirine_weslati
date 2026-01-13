@@ -4,7 +4,10 @@
   "cli": {
     "analytics": false,
     "packageManager": "yarn",
-    "schematicCollections": ["@schematics/angular", "@angular-eslint/schematics"]
+    "schematicCollections": [
+      "@schematics/angular",
+      "@angular-eslint/schematics"
+    ]
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -32,7 +35,9 @@
                 "input": "projects/sirine-weslati/public"
               }
             ],
-            "styles": ["projects/sirine-weslati/src/styles.scss"]
+            "styles": [
+              "projects/sirine-weslati/src/styles.scss"
+            ]
           },
           "configurations": {
             "production": {
@@ -91,7 +96,9 @@
                 "input": "projects/sirine-weslati/public"
               }
             ],
-            "styles": ["projects/sirine-weslati/src/styles.scss"],
+            "styles": [
+              "projects/sirine-weslati/src/styles.scss"
+            ],
             "scripts": []
           }
         }
