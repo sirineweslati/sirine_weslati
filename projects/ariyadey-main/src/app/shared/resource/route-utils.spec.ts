@@ -1,6 +1,6 @@
 import { TestBed } from "@angular/core/testing";
 
-import { RouteUtils } from "ariyadey-main/src/app/shared/resource/route-utils";
+import { RouteUtils } from "sirine-weslati/src/app/shared/resource/route-utils";
 
 describe("RouteUtils", () => {
   let service: RouteUtils;

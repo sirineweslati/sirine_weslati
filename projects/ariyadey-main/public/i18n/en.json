@@ -9,7 +9,7 @@
   "seo": {
     "title": "{{me.full-name}} - {{me.headline}}",
     "description": "Results-oriented Software Engineer with 5+ years of experience in Java, Spring, and Angular. Specializing in enterprise and web app development, I focus on performance optimization and high-quality product delivery.",
-    "keywords": "Ariya Moheb, Arya Moheb, Aria Moheb, Mojtaba Moheb, AriyaDey",
+    "keywords": "Ariya Moheb, Arya Moheb, Aria Moheb, Mojtaba Moheb, sirine",
     "open-graph": {
       "title": "{{seo.title}}",
       "description": "{{seo.description}}",
@@ -26,7 +26,7 @@
     "description": "Hi! I'm Ariya Moheb, a results-oriented Software Engineer with over 5 years of experience in enterprise and web application development. I specialize in Angular, Java, and Spring Framework.\n\nMy passion lies in crafting high-quality, high-performance software solutions that address real-world challenges. I thrive on translating complex requirements into intuitive user experiences and efficient backend systems. Throughout my career, I've focused on driving impactful improvements, always prioritizing clean, maintainable code.\n\nThis website is my personal space to share my professional journey and showcase projects that reflect my commitment to technical excellence and continuous learning.\n\nI'm keen to contribute my skills to innovative projects within dynamic, international remote teams. Please feel free to explore my work in the projects section, and I look forward to connecting!",
     "avatar-alt": "{{me.full-name}} - {{me.headline}}",
     "project": {
-      "ariyadey": {
+      "sirine": {
         "title": "Personal Website",
         "description": "- Developed and deployed a personal website from scratch, serving as a dynamic portfolio to showcase my professional journey and projects.\n- Implemented a responsive user interface with Angular and TypeScript, ensuring cross-browser compatibility and optimal performance. \n- Leveraged internationalization (i18n) for multilingual support (English and Persian) and optimized for SEO with dynamic hreflang and canonical tags. \n- Utilized GitHub Actions for CI/CD, automating build, test, and deployment processes to Cloudflare Workers for global content delivery and edge computing benefits."
       },

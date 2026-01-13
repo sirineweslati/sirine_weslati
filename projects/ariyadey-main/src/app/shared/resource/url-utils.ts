@@ -2,7 +2,7 @@ import { APP_BASE_HREF } from "@angular/common";
 import { DOCUMENT, inject, Injectable } from "@angular/core";
 import { SUPPORTED_LANGUAGES } from "@main/shared/i18n/i18n.config";
 import { Language } from "@main/shared/i18n/language";
-import { APP_DOMAIN } from "ariyadey-main/src/main";
+import { APP_DOMAIN } from "sirine-weslati/src/main";
 
 /**
  * A utility service for extracting language and path information from the current URL.
@@ -65,7 +65,7 @@ export class UrlUtils {
    * Handles trailing slashes for directory-like paths.
    * @param lang The language segment of the URL (e.g., 'en', 'fa').
    * @param paths The path segments following the language segment (e.g., ['about'], ['projects', 'my-app']).
-   * @returns The fully constructed absolute URL (e.g., 'https://ariyadey.me/en/about/').
+   * @returns The fully constructed absolute URL (e.g., 'https://sirine.me/en/about/').
    */
   getAbsoluteUrl(lang?: Language, ...paths: ReadonlyArray<string>) {
     return [this.baseUrl, lang ?? "", ...paths].filter((string) => string.length > 0).join("/");
@@ -77,7 +77,7 @@ export class UrlUtils {
    * This is particularly useful for Open Graph `og:image` and Twitter Card `twitter:image` tags,
    * where absolute URLs are required for proper rendering on social media platforms.
    * @param paths - A readonly array of string segments forming the asset path (e.g., ['assets', 'images', 'hero.jpg']).
-   * @returns The fully constructed absolute URL to the asset (e.g., 'https://ariyadey.me/assets/images/hero.jpg').
+   * @returns The fully constructed absolute URL to the asset (e.g., 'https://sirine.me/assets/images/hero.jpg').
    * @throws Error if no path segments are provided.
    */
   getAssetAbsoluteUrl(...paths: ReadonlyArray<string>) {

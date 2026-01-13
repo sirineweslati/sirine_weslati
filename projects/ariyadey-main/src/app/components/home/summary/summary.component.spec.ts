@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SummaryComponent } from "ariyadey-main/src/app/components/home/summary/summary.component";
+import { SummaryComponent } from "sirine-weslati/src/app/components/home/summary/summary.component";
 
 describe("SummaryComponent", () => {
   let component: SummaryComponent;

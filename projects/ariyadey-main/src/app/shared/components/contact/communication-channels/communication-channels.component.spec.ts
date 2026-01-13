@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { CommunicationChannelsComponent } from "ariyadey-main/src/app/shared/components/contact/communication-channels/communication-channels.component";
+import { CommunicationChannelsComponent } from "sirine-weslati/src/app/shared/components/contact/communication-channels/communication-channels.component";
 
 describe("CommunicationChannelsComponent", () => {
   let component: CommunicationChannelsComponent;

@@ -59,8 +59,8 @@ export const ARIYA_MOHEB: Person = {
   },
   projects: [
     {
-      title: "ariyadey",
-      description: "ariyadey",
+      title: "sirine",
+      description: "sirine",
       skills: [
         Skill.ANGULAR_FRAMEWORK,
         Skill.TYPESCRIPT,
@@ -69,7 +69,7 @@ export const ARIYA_MOHEB: Person = {
         Skill.GITHUB_ACTIONS,
         Skill.CLOUDFLARE_WORKERS,
       ],
-      link: "https://github.com/ariyadey/personal-website",
+      link: "https://github.com/sirine/personal-website",
       timeFrame: {
         start: new Date(2024, 6),
       },
@@ -84,7 +84,7 @@ export const ARIYA_MOHEB: Person = {
         Skill.BREATH_FIRST_SEARCH,
         Skill.DEPTH_FIRST_SEARCH,
       ],
-      link: "https://github.com/ariyadey/minesweeper",
+      link: "https://github.com/sirine/minesweeper",
       timeFrame: {
         start: new Date(2020, 12),
         end: new Date(2020, 12),
@@ -94,7 +94,7 @@ export const ARIYA_MOHEB: Person = {
       title: "jast",
       description: "jast",
       skills: [Skill.JAVA, Skill.ALGORITHMS, Skill.DATA_STRUCTURES, Skill.SWING],
-      link: "https://github.com/ariyadey/JAST",
+      link: "https://github.com/sirine/JAST",
       timeFrame: {
         start: new Date(2020, 1),
         end: new Date(2020, 1),
@@ -142,10 +142,10 @@ export const ARIYA_MOHEB: Person = {
   contacts: {
     email: "ariya.mms@gmail.com",
     socials: [
-      { ...SOCIALS.LINKEDIN, url: "https://linkedin.com/in/ariyadey" },
-      { ...SOCIALS.TELEGRAM, url: "https://ariyadey.t.me" },
-      { ...SOCIALS.GITHUB, url: "https://github.com/ariyadey" },
-      { ...SOCIALS.STACK_OVERFLOW, url: "https://stackoverflow.com/users/7930516/ariyadey" },
+      { ...SOCIALS.LINKEDIN, url: "https://linkedin.com/in/sirine" },
+      { ...SOCIALS.TELEGRAM, url: "https://sirine.t.me" },
+      { ...SOCIALS.GITHUB, url: "https://github.com/sirine" },
+      { ...SOCIALS.STACK_OVERFLOW, url: "https://stackoverflow.com/users/7930516/sirine" },
     ],
   },
 };
