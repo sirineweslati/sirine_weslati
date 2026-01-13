@@ -2,7 +2,7 @@ const { createWriteStream } = require("fs");
 const { SitemapStream } = require("sitemap");
 
 const BASE_URL = "https://ariyadey.me";
-const OUTPUT_DIR = "dist/sirine-weslati/browser/sitemap.xml";
+const OUTPUT_DIR = "dist/ariyadey-main/browser/sitemap.xml";
 const LINKS = [
   { url: "/en", changefreq: "weekly", priority: 1.0 },
   { url: "/fa", changefreq: "weekly", priority: 1.0 },

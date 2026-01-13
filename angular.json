@@ -8,31 +8,31 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ariyadey-main": {
+    "sirine-weslati": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "inlineStyle": true
         }
       },
-      "root": "projects/ariyadey-main",
-      "sourceRoot": "projects/ariyadey-main/src",
+      "root": "projects/sirine-weslati",
+      "sourceRoot": "projects/sirine-weslati/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ariyadey-main",
-            "index": "projects/ariyadey-main/src/index.html",
-            "browser": "projects/ariyadey-main/src/main.ts",
-            "tsConfig": "projects/ariyadey-main/tsconfig.app.json",
+            "outputPath": "dist/sirine-weslati",
+            "index": "projects/sirine-weslati/src/index.html",
+            "browser": "projects/sirine-weslati/src/main.ts",
+            "tsConfig": "projects/sirine-weslati/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/ariyadey-main/public"
+                "input": "projects/sirine-weslati/public"
               }
             ],
-            "styles": ["projects/ariyadey-main/src/styles.scss"]
+            "styles": ["projects/sirine-weslati/src/styles.scss"]
           },
           "configurations": {
             "production": {
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ariyadey-main:build:production"
+              "buildTarget": "sirine-weslati:build:production"
             },
             "development": {
-              "buildTarget": "ariyadey-main:build:development"
+              "buildTarget": "sirine-weslati:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,8 +75,8 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/ariyadey-main/**/*.ts",
-              "projects/ariyadey-main/**/*.html"
+              "projects/sirine-weslati/**/*.ts",
+              "projects/sirine-weslati/**/*.html"
             ],
             "eslintConfig": "eslint.config.js"
           }
@@ -84,14 +84,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:web-test-runner",
           "options": {
-            "tsConfig": "projects/ariyadey-main/tsconfig.spec.json",
+            "tsConfig": "projects/sirine-weslati/tsconfig.spec.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/ariyadey-main/public"
+                "input": "projects/sirine-weslati/public"
               }
             ],
-            "styles": ["projects/ariyadey-main/src/styles.scss"],
+            "styles": ["projects/sirine-weslati/src/styles.scss"],
             "scripts": []
           }
         }

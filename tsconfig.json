@@ -7,7 +7,7 @@
   "compilerOptions": {
     "baseUrl": "projects",
     "paths": {
-      "@main/*": ["ariyadey-main/src/app/*"]
+      "@main/*": ["sirine-weslati/src/app/*"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

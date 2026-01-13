@@ -1,0 +1,107 @@
+<mat-sidenav-container class="h-full">
+  <mat-sidenav
+    #drawer
+    [mode]="breakpoint().md ? 'side' : breakpoint().sm ? 'push' : 'over'"
+    [opened]="breakpoint().md"
+    class="md:pt-4"
+  >
+    @if (breakpoint().xs && !breakpoint().md) {
+      <mat-toolbar>
+        <button (click)="drawer.close()" mat-icon-button>
+          <mat-icon class="mat-icon-rtl-mirror" fontIcon="menu_open" />
+        </button>
+      </mat-toolbar>
+
+      <mat-nav-list class="px-2!">
+        @for (menuItem of menu(); track $index) {
+          <a
+            (click)="drawer.close()"
+            [routerLink]="['/']"
+            [fragment]="menuItem.fragment"
+            [scroll]="menuItem.fragment"
+            mat-list-item
+          >
+            <mat-icon [fontIcon]="menuItem.iconName" matListItemIcon />
+            <span matListItemTitle>{{ "menu." + menuItem.titleKey | i18n }}</span>
+          </a>
+        }
+      </mat-nav-list>
+    } @else {
+      <nav class="font-body-md flex flex-col items-center gap-7" cdkMenu>
+        @for (menuItem of menu(); track $index) {
+          <a
+            class="desktop-menu-item box-border flex w-11/12 cursor-pointer flex-col items-center py-1! hover:font-bold!"
+            [routerLink]="['/']"
+            [fragment]="menuItem.fragment"
+            [scroll]="menuItem.fragment"
+            cdkMenuItem
+            mat-button
+          >
+            <mat-icon class="m-auto! h-auto! w-auto! text-2xl!" [fontIcon]="menuItem.iconName" />
+            <span>{{ "menu." + menuItem.titleKey | i18n }}</span>
+          </a>
+        }
+      </nav>
+    }
+
+    <mat-toolbar
+      class="absolute bottom-4 gap-3 md:[--mat-toolbar-container-background-color:transparent] md:[--mat-toolbar-standard-height:auto]"
+    >
+      <mat-toolbar-row class="justify-center">
+        <mat-button-toggle-group
+          (valueChange)="switchThemeVariant($event)"
+          [value]="currentThemeVariant()"
+          [vertical]="breakpoint().md"
+          hideSingleSelectionIndicator
+        >
+          <mat-button-toggle aria-label="Change theme automatically" value="AUTO">
+            <mat-icon fontIcon="brightness_auto" />
+          </mat-button-toggle>
+          <mat-button-toggle aria-label="Switch to light theme" value="LIGHT">
+            <mat-icon fontIcon="light_mode" />
+          </mat-button-toggle>
+          <mat-button-toggle aria-label="Switch to dark theme" value="DARK">
+            <mat-icon fontIcon="dark_mode" />
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </mat-toolbar-row>
+
+      @if (breakpoint().md) {
+        <mat-toolbar-row class="justify-center">
+          <ng-container *ngTemplateOutlet="language" />
+        </mat-toolbar-row>
+      }
+    </mat-toolbar>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    @if (breakpoint().xs && !breakpoint().md) {
+      <mat-toolbar class="fixed z-50 justify-between md:hidden!">
+        <div class="flex items-center gap-2">
+          <button (click)="drawer.toggle()" aria-label="Open navigation menu" mat-icon-button>
+            <mat-icon fontIcon="menu" />
+          </button>
+        </div>
+        <ng-container *ngTemplateOutlet="language" />
+      </mat-toolbar>
+    }
+    <div class="mt-14 mb-10 inline-block w-full px-2 sm:mt-16 md:mt-4">
+      <router-outlet />
+    </div>
+    <footer class="px-4">
+      <mat-divider />
+      <p class="text-on-surface-variant py-2">
+        {{ "footer.copyright" | i18n }}
+      </p>
+    </footer>
+    <app-back-to-top />
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<ng-template #language>
+  @if (alternativeLanguage) {
+    <button (click)="switchLanguage(alternativeLanguage!)" [lang]="alternativeLanguage" mat-button>
+      {{ `language.native.${alternativeLanguage}` | i18n }}
+    </button>
+  }
+</ng-template>

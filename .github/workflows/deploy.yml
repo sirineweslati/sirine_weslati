@@ -34,4 +34,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: |
-            pages deploy dist/ariyadey-main/browser --project-name=ariyadey --branch=${{ github.ref_name }}
+            pages deploy dist/sirine-weslati/browser --project-name=sirine-weslati --branch=${{ github.ref_name }}
